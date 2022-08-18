@@ -307,37 +307,37 @@
             <section class="clearfix">
               <div class="project-section">
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper-elk').style.display='block'">
                     <img src="./images/elkstack.jpg" alt="project image">
                   </div>
                   <p class="project-title">Security Optimization Through Monitoring With ELK Stack</p>
                 </div>
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper-splunk').style.display='block'">
                     <img src="./images/MS_CS_Splunk_logo.png" alt="project image">
                   </div>
                   <p class="project-title">Implementation Of The Splunk Solution For The Analysis Of Security Logs</p>
                 </div>
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper-ids').style.display='block'">
                     <img src="./images/ini_snort.png" alt="project image">
                   </div>
                   <p class="project-title">Implementing an Intrusion Detection System</p>
                 </div>
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/NAC logo.jpg" alt="project image">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper-nac').style.display='block'">
+                    <img src="./images/NAC-logo.jpg" alt="project image">
                   </div>
                   <p class="project-title">Implementation of a NAC solution</p>
                 </div>
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper-misp').style.display='block'">
                     <img src="./images/misp-logo.png" alt="project image">
                   </div>
                   <p class="project-title">Study and implementation of an opensource Cyber Threat Intelligence Solution</p>
                 </div>
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper-dev').style.display='block'">
                     <img src="./images/devsecops-logo.jpg" alt="project image">
                   </div>
                   <p class="project-title">Development Of Web Applications Using The DevSecOps Approach</p>
@@ -361,22 +361,126 @@
                   <p class="project-title">Project Title</p>
                 </div> -->
               </div>
-              <div id="modal-wrapper" class="modal">
+              <div id="modal-wrapper-misp" class="modal">
 
                 <form class="modal-content animate">
 
                   <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                    <img src="images/floor.jpg" alt="project" class="avatar">
+                    <span onclick="document.getElementById('modal-wrapper-misp').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                    <img src="images/misp-logo.png" alt="project" class="avatar">
                     <h1 class="project_details" style="text-align:center">Project Details</h1>
                   </div>
 
                   <div class="container">
-                    <input type="text" placeholder="Project Name" name="uname" readonly>
-                    <textarea class="project_description" rows="3" placeholder="Project Description" readonly></textarea>
-                    <input type="url" placeholder="Project Link"readonly>
-                    <input type="text" placeholder="Languages used" readonly>
-                    <button class="project_submit" type="submit">Submit</button>
+                    <input type="text" value="Study and implementation of an opensource Cyber Threat Intelligence Solution" name="uname" readonly>
+                    <textarea class="project_description" rows="3" placeholder="Study of the company’s needs in cyber threat intelligence and Implementation of an open source solution (OpenCTI) based on internal information sources such as SIEM (ELK STACK) and external sources MISP and VIRUSTOTAL." readonly></textarea>
+                    <input type="text" placeholder="Tools:OPENCTI,ELK STACK, MISP,VIRUSTOTRAL " readonly>
+                    <!--  <input type="url" placeholder="Project Link"readonly>
+                    <button class="project_submit" type="submit">Submit</button> -->
+                  </div>
+                </form>
+              </div>
+              <div id="modal-wrapper-dev" class="modal">
+
+                <form class="modal-content animate">
+    
+                  <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper-dev').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="images/devsecops-logo.jpg" alt="project" class="avatar">
+                        <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+    
+                  <div class="container">
+                        <input type="text" placeholder="Development Of Web Applications Using The DevSecOps Approach" name="uname" readonly>
+                        <textarea class="project_description" rows="3" placeholder="- Setting up a CI/CD pipeline on. &#13;&#10- Containerization and deployment of a web application. &#13;&#10- The CI/CD pipeline includes automated security tests and and monitoring tools." readonly></textarea>
+                        <input type="text" placeholder="Tools:JIRA, DOCKER, Kubernetes (Minikube),GITLAB. " readonly>
+                        <!--  <input type="url" placeholder="Project Link"readonly>
+                        <button class="project_submit" type="submit">Submit</button> -->
+                  </div>
+
+                </form>
+
+              </div>
+              <div id="modal-wrapper-nac" class="modal">
+
+                <form class="modal-content animate">
+    
+                  <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper-nac').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="images/NAC-logo.jpg"alt="project" class="avatar">
+                        <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+    
+                  <div class="container">
+                        <input type="text" placeholder="Implementation of a Network Access Control" name="uname" readonly>
+                        <textarea class="project_description" rows="3" placeholder="Implementation of a NAC (Network Access Control) solution that allows identifying users and equipment by controlling
+                        the access of the company’s local network." readonly></textarea>
+                        <input type="text" placeholder="Tools:NAP SERVER, RADUIS, PFSENSE, 802.1X PROTOCOL. " readonly>
+                        <!--  <input type="url" placeholder="Project Link"readonly>
+                        <button class="project_submit" type="submit">Submit</button> -->
+                  </div>
+
+                </form>
+
+              </div>
+              <div id="modal-wrapper-ids" class="modal">
+
+                <form class="modal-content animate">
+    
+                  <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper-ids').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="images/ini_snort.png" alt="project" class="avatar">
+                        <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+    
+                  <div class="container">
+                        <input type="text" placeholder="Implementing an Intrusion Detection System" name="uname" readonly>
+                        <textarea class="project_description" rows="3" placeholder=" Implementation of a secure local network and detection with snort of certain attacks such as DOS attacks. " readonly></textarea>
+                        <input type="text" placeholder="Tools:UBUNTU,PFSENSE , SNORT,NMAP. " readonly>
+                        <!--  <input type="url" placeholder="Project Link"readonly>
+                        <button class="project_submit" type="submit">Submit</button> -->
+                  </div>
+
+                </form>
+
+              </div>
+              <div id="modal-wrapper-elk" class="modal">
+
+                <form class="modal-content animate">
+    
+                  <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper-elk').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="images/elkstack.jpg" alt="project" class="avatar">
+                        <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+    
+                  <div class="container">
+                        <input type="text" placeholder="Security Optimization Through Monitoring With ELK Stack" name="uname" readonly>
+                        <textarea class="project_description" rows="3" placeholder="security optimization through monitoring with the ELk stack  and simulation of APT attacks with red atomic " readonly></textarea>
+                        <input type="text" placeholder="Tools:ELASTICSEARCH, LOGSTASH , KIBANA, ATOMIC RED " readonly>
+                        <!--  <input type="url" placeholder="Project Link"readonly>
+                        <button class="project_submit" type="submit">Submit</button> -->
+                  </div>
+
+                </form>
+
+              </div>
+              <div id="modal-wrapper-splunk" class="modal">
+
+                <form class="modal-content animate">
+    
+                  <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper-splunk').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="images/MS_CS_Splunk_logo.png" alt="project" class="avatar">
+                        <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+    
+                  <div class="container">
+                        <input type="text" value="Implementation Of The Splunk Solution For The Analysis Of Security Logs" name="uname" readonly>
+                        <textarea class="project_description" rows="3" placeholder="Detection of brute force attacks using splunk and log analysis " readonly></textarea>
+                        <input type="text" placeholder="Tools:SPLUNK ENTREPRISE, SPLUNK UNIVERSAL FORWARDER,HPING3,HYDRA. " readonly>
+                        <!--  <input type="url" placeholder="Project Link"readonly>
+                        <button class="project_submit" type="submit">Submit</button> -->
                   </div>
 
                 </form>
